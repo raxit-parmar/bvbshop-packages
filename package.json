@@ -1,0 +1,65 @@
+{
+  "name": "@bvbshop-packages/core",
+  "version": "0.0.10-beta.120",
+  "main": "./index.tsx",
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "uninstall": "node scripts/uninstall.js",
+    "lint": "eslint --ext .tsx src/ --fix"
+  },
+  "lint-staged": {
+    "*.{tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@langleyfoxall/react-dynamic-form-builder": "^1.2.0-rc.8",
+    "@pawjs/pawjs": "3.0.2-beta.17",
+    "@pawjs/redux": "2.3.0",
+    "axios": "^0.19.2",
+    "node-cache": "^5.1.0",
+    "react-collapsed": "3.0.0",
+    "react-cookie": "^4.0.3",
+    "react-google-recaptcha": "^2.1.0",
+    "react-load-script": "0.0.6",
+    "react-meta-tags": "^0.7.4",
+    "react-redux": "^7.2.0",
+    "react-structured-data": "0.0.14",
+    "redux": "^4.0.5",
+    "redux-form": "^8.3.5",
+    "redux-saga": "^1.1.3",
+    "ua-parser-js": "^0.7.21",
+    "web-vitals": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-redux": "^7.1.8",
+    "@types/redux-form": "^8.2.6",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
+  },
+  "peerDependencies": {
+    "net": "^1.0.2",
+    "tls": "0.0.1",
+    "node-cache-redis": "^6.3.1",
+    "redis": "^3.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
