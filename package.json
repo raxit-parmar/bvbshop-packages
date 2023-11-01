@@ -1,6 +1,6 @@
 {
   "name": "@bvbshop-packages/core",
-  "version": "0.0.10-beta.121",
+  "version": "0.0.10-beta.122",
   "main": "./index.tsx",
   "license": "ISC",
   "scripts": {
@@ -35,7 +35,7 @@
     "web-vitals": "^1.1.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.0",
+    "@types/react": "^18.2.33",
     "@types/react-redux": "^7.1.8",
     "@types/redux-form": "^8.2.6",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
