@@ -17,7 +17,7 @@
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.9",
     "@langleyfoxall/react-dynamic-form-builder": "^1.2.0-rc.8",
-    "@pawjs/pawjs": "^4.0.0-beta.19",
+    "@pawjs/pawjs": "3.0.2-beta.17",
     "@pawjs/redux": "2.3.0",
     "axios": "^0.19.2",
     "node-cache": "^5.1.0",
@@ -35,8 +35,7 @@
     "web-vitals": "^1.1.0"
   },
   "devDependencies": {
-    "@types/react": "18.0.14",
-    "@types/react-dom": "18.0.5",
+    "@types/react": "^16.9.34",
     "@types/react-redux": "^7.1.8",
     "@types/redux-form": "^8.2.6",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
